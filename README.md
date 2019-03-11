@@ -10,7 +10,7 @@ Palette coloring is used in this tutorial for representing data in different col
 It is recommended to take a brief look into our [Heat Map](https://www.arction.com/tutorials/#/lcu_tutorial_2dHeatMaps_07) tutorial
 where palette coloring is explained before continuing further with this tutorial.   
 
-![](./assets/chart-surface-grid-3d-winforms-wpf.png)
+![](./assets/chart-surface-grid-3d-winforms-wpf.PNG)
 
 For this tutorial we predefine some variables for the purpose of easy usage and clearness.
 Define the following variables inside your Form or MainWindow class as follows.
