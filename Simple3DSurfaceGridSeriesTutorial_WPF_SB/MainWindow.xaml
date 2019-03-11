@@ -1,0 +1,47 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple3DSurfaceGridSeriesTutorial_WPF_SB"
+        xmlns:lcusb="http://schemas.arction.com/semibindablecharting/ultimate/" x:Class="Simple3DSurfaceGridSeriesTutorial_WPF_SB.MainWindow"
+        mc:Ignorable="d"
+        Title="LightningChart Tutorial - Simple 3D SurfaceGrid" Height="450" Width="800">
+    <Grid>
+        <lcusb:LightningChartUltimate x:Name="_chart" ActiveView="View3D">
+            <lcusb:LightningChartUltimate.View3D>
+                <lcusb:View3D>
+                    <lcusb:View3D.XAxisPrimary3D>
+                        <lcusb:AxisX3D/>
+                    </lcusb:View3D.XAxisPrimary3D>
+                    <lcusb:View3D.YAxisPrimary3D>
+                        <lcusb:AxisY3D Minimum="-50" Maximum="100"/>
+                    </lcusb:View3D.YAxisPrimary3D>
+                    <lcusb:View3D.ZAxisPrimary3D>
+                        <lcusb:AxisZ3D/>
+                    </lcusb:View3D.ZAxisPrimary3D>
+                    <lcusb:View3D.LegendBox>
+                        <lcusb:LegendBox3D Layout="Vertical">
+                        </lcusb:LegendBox3D>
+                    </lcusb:View3D.LegendBox>
+                    <lcusb:View3D.SurfaceGridSeries3D>
+                        <lcusb:SurfaceGridSeries3D x:Name ="_surfaceGrid" ContourLineType="ColorLineByY" ContourLineWidth="2" WireframeType="WireframePalettedByY" ColorSaturation="80" RangeMinX="0" RangeMaxX="100" RangeMinZ="0" RangeMaxZ="100" SizeX="500" SizeZ="500">
+                            <lcusb:SurfaceGridSeries3D.ContourPalette>
+                                <lcusb:ValueRangePalette MinValue="-50" Type="Gradient">
+                                    <lcusb:ValueRangePalette.Steps>
+                                        <lcusb:PaletteStep Color="Blue" MaxValue="-25"/>
+                                        <lcusb:PaletteStep Color="DodgerBlue" MaxValue="0"/>
+                                        <lcusb:PaletteStep Color="LawnGreen" MaxValue="25"/>
+                                        <lcusb:PaletteStep Color="Yellow" MaxValue="50"/>
+                                        <lcusb:PaletteStep Color="Orange" MaxValue="75"/>
+                                        <lcusb:PaletteStep Color="Red" MaxValue="100"/>
+                                    </lcusb:ValueRangePalette.Steps>
+                                </lcusb:ValueRangePalette>
+                            </lcusb:SurfaceGridSeries3D.ContourPalette>
+                        </lcusb:SurfaceGridSeries3D>
+                    </lcusb:View3D.SurfaceGridSeries3D>
+                </lcusb:View3D>
+            </lcusb:LightningChartUltimate.View3D>
+        </lcusb:LightningChartUltimate>
+    </Grid>
+</Window>
