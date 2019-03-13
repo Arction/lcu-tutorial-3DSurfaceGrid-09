@@ -1,5 +1,5 @@
 ﻿// ------------------------------------------------------------------------------------------------------
-// LightningChart® example code:  Simple 3D SurfaceGrid Chart Demo.
+// LightningChart® example code: 3D SurfaceGrid Chart Demo.
 //
 // If you need any assistance, or notice error in this example code, please contact support@arction.com. 
 //
@@ -52,11 +52,6 @@ namespace Simple3DSurfaceGridSeriesTutorial_WPF_SB
 
             // Safe disposal of LightningChart components when the window is closed.
             Closed += new EventHandler(Window_Closed);
-
-            #region Hidden polishing
-            // Customize chart.
-            CustomizeChart(_chart);
-            #endregion
         }
 
         // Create chart instance.
@@ -64,9 +59,6 @@ namespace Simple3DSurfaceGridSeriesTutorial_WPF_SB
         {
             // Create chart.
             // This is done using XAML.
-
-            // Set chart control into the parent container.
-            (Content as Grid).Children[0] = _chart;
 
             // Disable rendering before chart updates.
             _chart.BeginUpdate();
@@ -91,6 +83,11 @@ namespace Simple3DSurfaceGridSeriesTutorial_WPF_SB
 
             // Add SurfaceGridSeries to chart.
             // This is done using XAML.
+
+            #region Hidden polishing
+            // Customize chart.
+            CustomizeChart(_chart);
+            #endregion
 
             // Allow chart rendering.
             _chart.EndUpdate();
