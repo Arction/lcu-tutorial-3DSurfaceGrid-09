@@ -1,4 +1,4 @@
-# Simple 3D SurfaceGrid Chart
+# 3D SurfaceGrid Chart
 
 *LightningChart* offers two different ways for representing data as 3D surface - *SurfaceGridSeries3D* and *SurfaceMeshSeries3D*.
 In SurfaceGridSeries3D nodes are equally spaced in X and Z dimensions, where in *SurfaceMeshSeries3D* the nodes can be positioned freely in 3D space.
