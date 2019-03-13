@@ -7,7 +7,7 @@ This tutorial shows how to create a simple 3D SurfaceGrid with wireframe and con
 SurfaceGrid allows visualizing data as a 3D surface and can be utilized for representing, measuring and examining data and it's variances.
 
 Palette coloring is used in this tutorial for representing data in different colors according to it's values.
-It is recommended to take a brief look into our [Heat Map](https://www.arction.com/tutorials/#/lcu_tutorial_2dHeatMaps_07) tutorial
+It is recommended to take a brief look into our [Heat Map](https://www.arction.com/tutorials/#/lcu_tutorial_2DHeatMap_07) tutorial
 where palette coloring is explained before continuing further with this tutorial.   
 
 ![chart with surfacegrid series 3d winforms wpf](./assets/chart-surface-grid-3d-winforms-wpf.PNG)
